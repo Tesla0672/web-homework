@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>特斯拉超跑 | YouTube 頻道官方網站</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts (Noto Sans TC for better Chinese typography) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons for Gaming/Tech icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <style>
+        /* Custom Styles for Gamer/Neon Theme */
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #0b0f19;
+            color: #ffffff;
+            background-image: 
+                radial-gradient(circle at 15% 50%, rgba(0, 243, 255, 0.05), transparent 25%),
+                radial-gradient(circle at 85% 30%, rgba(181, 0, 255, 0.05), transparent 25%);
+        }
+
+        /* Neon Text Effects */
+        .neon-text-cyan {
+            text-shadow: 0 0 10px rgba(0, 243, 255, 0.7), 0 0 20px rgba(0, 243, 255, 0.5);
+        }
+        .neon-text-purple {
+            text-shadow: 0 0 10px rgba(181, 0, 255, 0.7), 0 0 20px rgba(181, 0, 255, 0.5);
+        }
+
+        /* Neon Button Styling */
+        .neon-btn {
+            position: relative;
+            display: inline-block;
+            padding: 15px 30px;
+            color: #00f3ff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+            text-decoration: none;
+            overflow: hidden;
+            transition: 0.2s;
+            border: 1px solid #00f3ff;
+            border-radius: 8px;
+            background: rgba(0, 243, 255, 0.05);
+            box-shadow: 0 0 10px rgba(0, 243, 255, 0.2);
+        }
+
+        .neon-btn:hover {
+            color: #0b0f19;
+            background: #00f3ff;
+            box-shadow: 0 0 10px #00f3ff, 0 0 40px #00f3ff, 0 0 80px #00f3ff;
+            border-color: transparent;
+        }
+
+        /* Card Hover Effects */
+        .category-card {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(181, 0, 255, 0.5);
+            box-shadow: 0 10px 30px -10px rgba(181, 0, 255, 0.3);
+        }
+
+        .category-card .icon-container {
+            transition: all 0.3s ease;
+        }
+
+        .category-card:hover .icon-container {
+            color: #00f3ff;
+            transform: scale(1.1);
+        }
+
+        /* Grid Background Pattern */
+        .bg-grid {
+            background-size: 40px 40px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col bg-grid relative">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-[#0b0f19]/80 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <i class="ph-fill ph-game-controller text-3xl text-[#00f3ff]"></i>
+                    <span class="font-black text-xl tracking-wider text-white">特斯拉超跑</span>
+                </div>
+                <div>
+                    <a href="https://www.youtube.com/@Tesla0622" target="_blank" rel="noopener noreferrer" class="text-sm font-bold text-white hover:text-[#00f3ff] transition-colors border border-white/20 hover:border-[#00f3ff] rounded px-4 py-2">
+                        前往頻道
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="flex-grow">
+        <section class="relative pt-20 pb-32 flex items-center justify-center min-h-[70vh] text-center px-4">
+            <div class="absolute inset-0 overflow-hidden pointer-events-none">
+                <!-- Abstract glowing orbs -->
+                <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-[#00f3ff] rounded-full mix-blend-screen filter blur-[120px] opacity-30 animate-pulse"></div>
+                <div class="absolute bottom-1/4 right-1/4 w-72 h-72 bg-[#b500ff] rounded-full mix-blend-screen filter blur-[120px] opacity-20"></div>
+            </div>
+            
+            <div class="relative z-10 max-w-4xl mx-auto">
+                <div class="inline-block mb-4 px-3 py-1 rounded-full border border-purple-500/30 bg-purple-500/10 text-purple-300 text-sm font-medium tracking-wide">
+                    🎉 感謝超過 2,300 位觀眾訂閱支持！
+                </div>
+                <h1 class="text-5xl md:text-7xl font-black mb-6 tracking-tight">
+                    <span class="text-white">探索最燃的</span><br class="hidden md:block" />
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#00f3ff] to-[#b500ff] neon-text-cyan">遊戲與動畫世界</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+                    歡迎來到「特斯拉超跑」！為你帶來最新熱門手遊實況、精緻的 3D MMD 角色動畫，以及身歷其境的模擬駕駛體驗。
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="https://www.youtube.com/@Tesla0622" target="_blank" rel="noopener noreferrer" class="neon-btn flex items-center gap-2">
+                        <i class="ph-fill ph-youtube-logo text-xl"></i>
+                        立即訂閱頻道
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="py-20 relative z-10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-[#111827]/80 backdrop-blur-md rounded-2xl p-8 md:p-12 border border-white/5 shadow-2xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-[#00f3ff]/10 rounded-bl-full blur-2xl"></div>
+                    <h2 class="text-3xl font-bold mb-6 flex items-center gap-3">
+                        <i class="ph-fill ph-info text-[#b500ff]"></i> 關於頻道
+                    </h2>
+                    <p class="text-gray-300 text-lg leading-relaxed mb-4">
+                        「特斯拉超跑」是由一位熱愛二次元文化、遊戲與汽車改裝的創作者所建立。頻道致力於打造多元化的娛樂空間。
+                    </p>
+                    <p class="text-gray-300 text-lg leading-relaxed">
+                        無論你是想要欣賞《蔚藍檔案》、《絕區零》等最新大作的抽卡與劇情實況，還是喜歡看精緻角色在 MMD 中翩翩起舞，亦或是享受在《Minecraft》與各式改裝車模擬器中自由探索的快感，這裡都能滿足你的期待。加入我們，一起享受遊戲帶來的純粹快樂！
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="py-20 bg-black/40 relative z-10 border-t border-b border-white/5">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl md:text-4xl font-black text-center mb-16 neon-text-cyan">
+                    頻道核心內容
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <!-- Category 1: Gacha Games -->
+                    <div class="category-card rounded-2xl p-8 flex flex-col h-full relative overflow-hidden">
+                        <div class="absolute -right-4 -top-4 text-8xl text-white/5 font-black z-0">01</div>
+                        <div class="icon-container text-5xl text-[#b500ff] mb-6 relative z-10">
+                            <i class="ph-fill ph-sword"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-4 relative z-10">熱門抽卡手遊</h3>
+                        <p class="text-gray-400 mb-6 flex-grow relative z-10">
+                            最新、最熱門的二次元手遊實況，包含抽卡精華、劇情體驗與攻略分享。
+                        </p>
+                        <div class="flex flex-wrap gap-2 relative z-10">
+                            <span class="px-3 py-1 text-xs font-medium rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/30">蔚藍檔案</span>
+                            <span class="px-3 py-1 text-xs font-medium rounded-full bg-green-500/20 text-green-300 border border-green-500/30">絕區零</span>
+                            <span class="px-3 py-1 text-xs font-medium rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30">崩壞：星穹鐵道</span>
+                            <span class="px-3 py-1 text-xs font-medium rounded-full bg-yellow-500/20 text-yellow-300 border border-yellow-500/30">鳴潮</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 2: 3D MMD -->
+                    <div class="category-card rounded-2xl p-8 flex flex-col h-full relative overflow-hidden">
+                        <div class="absolute -right-4 -top-4 text-8xl text-white/5 font-black z-0">02</div>
+                        <div class="icon-container text-5xl text-[#b500ff] mb-6 relative z-10">
+                            <i class="ph-fill ph-video-camera"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-4 relative z-10">3D MMD 動畫</h3>
+                        <p class="text-gray-400 mb-6 flex-grow relative z-10">
+                            精心製作的 MikuMikuDance 3D 舞蹈動畫，高品質渲染帶來絕佳的視覺饗宴。
+                        </p>
+                        <div class="flex flex-wrap gap-2 relative z-10">
+                            <span class="px-3 py-1 text-xs font-medium rounded-full bg-pink-500/20 text-pink-300 border border-pink-500/30">MikuMikuDance</span>
+                            <span class="px-3 py-1 text-xs font-medium rounded-full bg-rose-500/20 text-rose-300 border border-rose-500/30">聖園彌香</span>
+                            <span class="px-3 py-1 text-xs font-medium rounded-full bg-fuchsia-500/20 text-fuchsia-300 border border-fuchsia-500/30">角色舞蹈</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 3: Sandbox & Driving -->
+                    <div class="category-card rounded-2xl p-8 flex flex-col h-full relative overflow-hidden">
+                        <div class="absolute -right-4 -top-4 text-8xl text-white/5 font-black z-0">03</div>
+                        <div class="icon-container text-5xl text-[#b500ff] mb-6 relative z-10">
+                            <i class="ph-fill ph-steering-wheel"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-4 relative z-10">沙盒與駕駛模擬</h3>
+                        <p class="text-gray-400 mb-6 flex-grow relative z-10">
+                            在開放世界中發揮創意，或是在寫實的改裝車模擬器中體驗極速快感。
+                        </p>
+                        <div class="flex flex-wrap gap-2 relative z-10">
+                            <span class="px-3 py-1 text-xs font-medium rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">Minecraft</span>
+                            <span class="px-3 py-1 text-xs font-medium rounded-full bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">3D駕駛課</span>
+                            <span class="px-3 py-1 text-xs font-medium rounded-full bg-orange-500/20 text-orange-300 border border-orange-500/30">改裝車模擬</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section bottom -->
+        <section class="py-24 text-center px-4 relative z-10">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8">準備好加入旅程了嗎？</h2>
+            <p class="text-gray-400 mb-10 max-w-xl mx-auto">點擊下方按鈕前往 YouTube 訂閱頻道，開啟小鈴鐺，不錯過任何一部精彩影片！</p>
+            <a href="https://www.youtube.com/@Tesla0622" target="_blank" rel="noopener noreferrer" class="neon-btn inline-flex items-center gap-2 text-lg px-8 py-4">
+                <i class="ph-fill ph-play-circle text-2xl"></i>
+                前往 YouTube 頻道
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black/80 py-8 border-t border-white/10 text-center relative z-10">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col items-center">
+            <div class="flex gap-6 mb-4">
+                <a href="https://www.youtube.com/@Tesla0622" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">
+                    <i class="ph-fill ph-youtube-logo text-2xl"></i>
+                </a>
+                <!-- 可以視需求加入其他社群連結 -->
+            </div>
+            <p class="text-[#00f3ff] text-lg font-bold mb-4 tracking-wide">
+                學號 B48A010 王家峰
+            </p>
+            <p class="text-gray-500 text-sm">
+                &copy; 2026 特斯拉超跑 (@Tesla0622). All rights reserved.
+            </p>
+            <p class="text-gray-600 text-xs mt-2">
+                Not officially affiliated with Tesla Motors or mentioned game publishers.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
